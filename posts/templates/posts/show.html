@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ post.title }} | Post Details</title>
+    <link href="{% static 'css/dist/styles.css' %}" rel="stylesheet" />
+</head>
+<body class="bg-gray-100 min-h-screen font-sans">
+
+    <div class="max-w-4xl mx-auto px-4 py-12">
+
+        <div class="mb-6">
+            <a href="/" class="text-blue-600 hover:underline text-sm flex items-center">
+                ← Back to Posts
+            </a>
+        </div>
+
+        <h1 class="text-4xl font-extrabold text-gray-800 mb-8 text-center">Post Details</h1>
+
+        {% include "components/card.html" %}
+    </div>
+
+</body>
+</html>
